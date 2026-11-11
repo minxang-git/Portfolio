@@ -25,11 +25,13 @@ battery, biological, cardboard, clothes, glass, metal, paper, plastic, shoes, tr
 
 ## Source Code
 - [PredictCamera_classify.py](PredictCamera_classify.py) — YOLOv8 + ConvNeXt Tiny 기반 객체 탐지 및 분류
-- [predictcamera_fast.py](Predictcamera_fast.py) — ConvNeXt Tiny 단독 분류
+- [predictcamera_fast.py](predictcamera_fast.py) — ConvNeXt Tiny 단독 분류
 
-## 모델 파일
-- `yolov8n.pt` — YOLOv8n 객체 탐지 모델 가중치
-- `trash_convnext_tiny.onnx` — ConvNeXt Tiny 쓰레기 분류 모델 (별도 준비 필요)
+## 모델 파일 안내
+- `yolov8n.pt`: Ultralytics에서 제공하는 사전학습 모델 사용
+- `trash_convnext_tiny.onnx`: 별도 준비가 필요한 쓰레기 분류 모델
+
+※ 모델 가중치 파일은 저장소에 포함하지 않았습니다.
 
 ## 프로젝트를 통해 배운 점
 YOLOv8 객체 탐지와 ConvNeXt Tiny 이미지 분류 모델을 연계하여 실시간 영상 처리 시스템을 구현하였습니다. 또한 ONNX Runtime을 활용한 모델 추론과 GPU 가속 환경 설정 방법을 학습하고, 객체 탐지 기반 방식과 단독 분류 방식의 차이를 이해할 수 있었습니다.
